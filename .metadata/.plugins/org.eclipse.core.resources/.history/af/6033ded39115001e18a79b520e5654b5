@@ -1,0 +1,110 @@
+package 보충수업;
+
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 조건문 if
+		
+//		if(조건문1) { // 만약 조건문1이 참이라면 실행문1 실행
+//			실행문1
+//		}else if(조건문2) { // 만약 조건문1이 참이 아니고
+//			실행문2        // 조건문2가 참이면 실행문2 실행
+//		}else {
+//			실행문3      // 모든 조건문이 거짓일 때 실행문3 실행
+//		}
+		
+//		int a = 10;
+		
+		Scanner sc = new Scanner(System.in);
+		// 숫자 입력 : nextInt();
+		// 문자 입력 : next();
+//		System.out.print("숫자 입력> ");
+//		int a = sc.nextInt();
+//		
+//		if(a > 0) {
+//			System.out.println("양수");
+//		}else if(a < 0) {
+//			System.out.println("음수");
+//		}else {
+//			System.out.println("0");
+//		}
+		
+		// 문자를 입력받고 "안녕"과 같으면 통과, 다르면 실패 출력
+//		System.out.print("문자 입력> ");
+//		String i = sc.next();
+//		String b = "안녕";
+//		
+//		if(i.equals("안녕")) {
+//			System.out.println("통과");
+//		}else {
+//			System.out.println("실패");
+//		}
+		
+		// 로그인
+		
+		String id = "test";
+		String pw = "1234";
+		
+		System.out.println("아이디 입력> ");
+		String loginId = sc.next();
+		System.out.println("비밀번호 입력> ");
+		String loginPw = sc.next();
+		
+		// 아이디, 비밀번호 일치했을 때만 로그인 성공 출력
+		
+		if(id.equals(loginId) && pw.equals(loginPw)) {
+			System.out.println("로그인 성공");
+		}else {
+			System.out.println("로그인 실패");
+		}
+		
+		
+		}
+		
+		
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

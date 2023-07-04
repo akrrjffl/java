@@ -1,0 +1,24 @@
+package day08;
+
+public class Calculator {
+	int num1;
+	int num2;
+	
+	// 메서드명 : sum, 리턴타입 : X, 매개변수 : X, 실행문구 : 필드num1+num2출력
+	public void sum() {
+		 System.out.println(num1+num2);
+	}
+	// 메서드명 : sub, 리턴타입 : X, 매개변수 : int 2개, 실행문구 : 매개변수 두개의 합 출력
+	public void sub(int a, int b) {
+		System.out.println(a-b);
+	}
+	// 메서드명 : mul, 리턴타입 : O, 매개변수 : X, 실행문구 : 필드num1*num2리턴
+	public int mul() {         // mul옆에 소괄호
+		return num1*num2;
+	}
+	// 메서드명 : div, 리턴타입 : O, 매개변수 : int 2개, 실행문구 : 매개변수 두개의 나눈 값 리턴
+	public double div(int a, double b) {                                  // double,int
+		return a/ (double)b;  // 더블로 넣고싶을때
+	}
+	
+}

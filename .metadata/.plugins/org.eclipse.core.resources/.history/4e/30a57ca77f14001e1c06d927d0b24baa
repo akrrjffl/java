@@ -1,0 +1,65 @@
+package day08;
+
+import java.util.Scanner;
+
+public class 복습 {
+
+	public static void main(String[] args) {
+		// 두개의 수 를 입력받아 더하기 빼기 곱하기 나누기 나머지 구하기
+		
+		// 두개의 수 받기
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("1.더하기 2.빼기 3.곱하기 4.나누기 5.나머지");
+//		System.out.println("메뉴선택> ");
+//		int menu = sc.nextInt();
+//		System.out.println("첫번째 수");
+//		int a = sc.nextInt();
+//		System.out.println("두번째 수");
+//		int b = sc.nextInt();
+//		
+//		// 메뉴에 따라 갑 출력하기
+//		
+//		if(menu == 1) {
+//			System.out.println(a+" + "+b+" = "+(a+b));
+//		}else if(menu == 2) {
+//			System.out.println(a+" - "+b+" = "+(a-b));
+//		}else if(menu == 3) {
+//			System.out.println(a+" * "+b+" = "+(a*b));
+//		}else if(menu == 4) {
+//			System.out.println(a+" / "+b+" = "+(a/b)); // (a/(double)b) : 소숫점
+//		}else if(menu == 5) {
+//			System.out.println(a+" % "+b+" = "+(a%b));
+//		}else {
+//			System.out.println("다시입력");
+//		}
+		
+		// 1~100까지 3의배수 갯수 출력
+		// 1~100까지 3의배수, 5의배수, 3과5의 배수 갯수 출력
+		Scanner sc = new Scanner(System.in);
+		int cnt = 0;
+		int cnt1 = 0;
+		int cnt2 = 0;
+		for(int i=1; i<=100; i++) {
+			if(i % 3 == 0 && i % 5 == 0) {
+				cnt++;
+			}else if(i % 3 == 0) {
+				cnt1++;
+			}else if(i % 5 == 0) {
+				cnt2++;
+			}
+		}
+		System.out.println(cnt);
+		System.out.println(cnt1);
+		System.out.println(cnt2);
+
+	}
+
+}
+
+
+
+
+
+
+
+
